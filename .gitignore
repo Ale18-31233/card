@@ -1,0 +1,12 @@
+### Bower modules ###
+bower_components
+### Node modules ###
+node_modules
+### Storm project files ###
+.idea
+### Compiled typescript ###
+assets/scripts/*.js
+### Compiled assets ###
+dist
+### Typescript definitions ###
+typings

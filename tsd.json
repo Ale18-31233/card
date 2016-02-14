@@ -1,0 +1,18 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "jquery/jquery.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "swiper/swiper.d.ts": {
+      "commit": "3030a4be536b6530c06b80081f1333dc0de4d703"
+    },
+    "velocity-animate/velocity-animate.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    }
+  }
+}
