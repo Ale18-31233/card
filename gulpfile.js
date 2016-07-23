@@ -88,9 +88,6 @@ var cssTasks = function (filename) {
             return gulpif(enabled.maps, sourcemaps.init());
         })
         .pipe(function () {
-            return gulpif('*.less', less());
-        })
-        .pipe(function () {
             return gulpif('*.scss', sass({
                 outputStyle: 'nested', // libsass doesn't support expanded yet
                 precision: 10,
@@ -304,7 +301,7 @@ gulp.task('wiredep', function () {
 // `gulp inject` - Automaticaly injects js and css dependencies into main php
 // script file.
 gulp.task('inject', function () {
-    var target = gulp.src('./index.php');
+    var target = gulp.src('./index.html');
     var sources = gulp.src([path.dist + 'styles/**/*.css', path.dist + 'scripts/**/*.js'], {read: false});
 
     return target.pipe(inject(sources, {relative: true}))
